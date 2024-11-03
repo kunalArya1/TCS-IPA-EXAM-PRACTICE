@@ -1,11 +1,42 @@
 package IPA05;
 
+import java.util.*;
+
 public class IPA05S {
     public  static  void main(String [] args){
 
     }
     public static  int findAvgOfQuizByAdmin(Course [] course,String courseAdmin){
-        return 0;
+       int sum = 0;
+       int count = 0;
+        for (int i = 0; i < course.length; i++) {
+            if(course[i].getCourseAdmin().equals(courseAdmin)){
+                sum += course[i].getQuiz();
+                count++;
+            }
+        }
+        int average = (sum / count);
+
+        if (average < 0 ){
+            return 0;
+        }
+        else return average;
+    }
+
+    public static Course[] sortCourseByHandsOn(Course [] course , int handson){
+        ArrayList<Course> arr = new ArrayList<>();
+
+        for (int i = 0; i < course.length; i++) {
+            if(course[i].getHandson() < handson){
+                arr.add(course[i]);
+            }
+        }
+        Collections.sort(arr, Comparator.comparingInt(Course::hashCode));
+        Course[] result = arr.toArray(new Course[0]);
+        if (arr.isEmpty()){
+            return null;
+        }
+        else return result;
     }
 }
 
