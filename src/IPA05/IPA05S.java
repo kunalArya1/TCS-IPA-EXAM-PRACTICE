@@ -4,6 +4,35 @@ import java.util.*;
 
 public class IPA05S {
     public  static  void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    Course [] arr = new Course[4];
+        for (int i = 0; i < arr.length; i++) {
+            int courseId = sc.nextInt();sc.nextLine();
+            String courseName = sc.nextLine();
+            String courseAdmin = sc.nextLine();
+            int quiz = sc.nextInt();sc.nextLine();
+            int handson = sc.nextInt();sc.nextLine();
+
+            arr[i] = new Course(courseId,courseName,courseAdmin,quiz,handson);
+        }
+
+        String courseAdmin = sc.nextLine();
+        int handson = sc.nextInt();sc.nextLine();
+        int averageQuiz = findAvgOfQuizByAdmin(arr,courseAdmin);
+        if(averageQuiz > 0 ){
+            System.out.println(averageQuiz);
+        }else {
+            System.out.println("No Course found.");
+        }
+
+        Course [] result = sortCourseByHandsOn(arr,handson);
+        if(result != null){
+            for (int i = 0; i < result.length; i++) {
+                System.out.println(result[i].getCourseName());
+            }
+        }else {
+            System.out.println("No Course found with mentioned attribute.");
+        }
 
     }
     public static  int findAvgOfQuizByAdmin(Course [] course,String courseAdmin){
@@ -15,28 +44,44 @@ public class IPA05S {
                 count++;
             }
         }
-        int average = (sum / count);
-
-        if (average < 0 ){
-            return 0;
+        int average = 0;
+        if(count != 0 ){
+             average = (sum / count);
         }
-        else return average;
+
+        if (average > 0 ){
+            return average;
+        }
+        else return 0;
     }
 
     public static Course[] sortCourseByHandsOn(Course [] course , int handson){
-        ArrayList<Course> arr = new ArrayList<>();
+        Course [] arr2 = new Course[0];
 
         for (int i = 0; i < course.length; i++) {
             if(course[i].getHandson() < handson){
-                arr.add(course[i]);
+                arr2 = Arrays.copyOf(arr2,arr2.length + 1 );
+                arr2[arr2.length - 1 ] = course[i];
             }
         }
-        Collections.sort(arr, Comparator.comparingInt(Course::hashCode));
-        Course[] result = arr.toArray(new Course[0]);
-        if (arr.isEmpty()){
-            return null;
+        Course val;
+        for (int i = 0; i < arr2.length; i++) {
+            for (int j = i + 1; j < arr2.length ; j++) {
+
+                if(arr2[i].getHandson() > arr2[j].getHandson() ){
+                    val = arr2[i];
+                    arr2[i] = arr2[j];
+                    arr2[j] = val;
+                }
+            }
+
+            
         }
-        else return result;
+
+        if (arr2.length > 0 ){
+            return arr2;
+        }
+        else return null;
     }
 }
 
