@@ -32,7 +32,6 @@ findCollegeWithMaximumPincode method:
 
    Create the Static method in the Solution Class.
 
- This method will take array of the College objects and return the College object having maximum pincode if found else return null if not found. for this method ,main method will print College object with maximum pincode if the returned value is not null.if the returned value is null , then the main method will print "No college found with mentioned attribute".
 
 
 
@@ -40,9 +39,7 @@ findCollegeWithMaximumPincode method:
 
 searchCollegeByAddress method:
 Create the Static method in the Solution Class.
-This method will take array of College objects as input and address as input and return College object having the mentioned address if found else return null if not found.
 
-for this method main method will print College object details as it is , if the returned value is not null.if the returned value is null then ,main method will print "No college found with mentioned attribute".
 
 
 
