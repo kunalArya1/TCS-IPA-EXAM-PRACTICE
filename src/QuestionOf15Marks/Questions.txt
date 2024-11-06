@@ -1,0 +1,315 @@
+/* Find Characters of a string at odd index
+ * Arijit = rjt
+ * priyanka = ryna
+*/
+
+====================================================================
+/* Find occurance of a character in a string
+    Input
+    --------------
+ *  Priyanka
+ *  a
+
+ *  Output
+    ----------------
+ *  2
+ */
+
+
+ ====================================================================
+ // aabbbcc = a2b3c2
+ // abbccc = a1b2c3
+
+
+ =====================================================================
+
+ /*Count the number of words in a sentence that contain at least two consecutive vowels (a, e, i, o, u) in them.
+ Here's a sample input and output:
+
+ Input: I enjoy eating spaghetti and meatballs for dinner
+ Output: 2
+
+ Explanation: There are two words in the sentence that contain at least two consecutive vowels - "enjoy" and "meatballs".
+  */
+
+===========================================================================
+
+/* Find the characters in odd position of a string which are consonent
+ *
+ * Input: Arijit Ghosh
+ * Output: hs
+ */
+================================================================================
+/* Find number of lower case in a string
+ * AriJIt = 3
+ */
+===================================================================================
+/* Find number of upper case in a string
+ * AriJIt = 3
+ */
+
+==================================================================================
+/* Count the words in a sentence which are start with vowel.
+ *
+ * Input: Arijit is student of MCA
+ * Output: 3
+ *
+ * Input: Sara plays tennis
+ * Output: No such words
+*/
+=======================================================================================
+/* Count number of word in a string
+*Note : Always ignore the spaces if more than 1 space given between two word
+
+Sample Input : 1
+------------------------
+Kalyani Goverment Engineering College
+
+Process
+---------------------------
+[Kalyani, Goverment, Engineering, College]
+
+Output
+---------------------------
+Number of word : 4
+*************************************
+Sample Input : 2
+------------------------
+Kalyani Goverment  Engineering College
+
+Process
+---------------------------
+[Kalyani, Goverment, , Engineering, College]
+
+Output
+---------------------------
+Number of word : 4
+*/
+==============================================================================
+/* Count number of prime digit in a Number
+ * Input : 254786135
+ * Output : 5
+*/
+
+==========================================
+
+/* Count number of vowel, consonent and digit into a string */
+
+========================================
+/* Write a Java program that takes a user input integer n and prints the Fibonacci series up to n.
+
+The Fibonacci series is a series of numbers in which each number is the sum of the two preceding numbers.
+The first two numbers in the series are 0 and 1. For example, the first 10 numbers in the Fibonacci series are:
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
+
+The program should use a for loop to generate the series.
+
+Sample Input:
+20
+
+Sample Output:
+0 1 1 2 3 5 8 13
+
+Explanation:
+The Fibonacci series up to 20 is: 0, 1, 1, 2, 3, 5, 8, 13. Therefore, the output is "0 1 1 2 3 5 8 13".
+*/
+
+==============================================
+/* Input : Home, Sweet Home
+           Home
+ * Output : Number of that word present in the sentence : 2
+ *
+ * Process
+ * ----------
+ * The word Home present in the sentence 2 times
+ */
+
+ ====================================
+ /*Given a sentence, Find words that start with a capital letter.
+
+ For example, in the sentence "The quick Brown Fox jumps over the lazy dog", there are three words that start with a
+ capital letter: "The", "Brown", and "Fox". */
+
+ ===================================
+ // Find the first non repeated character substring
+ //Arijit = Arij
+
+ ====================================
+ /*Write a Java program to find the first non-repeated character in a given string.
+
+ Here's an example of the expected input and output:
+
+ Input string: "minimum"
+ Output: "n"
+
+ */
+
+=========================================
+/* Find first letter of each word in a string
+    Input : Kalyani Govt. Eng. College
+    Output : KGEC
+*/
+
+==========================================
+
+/* Find largest word from a given sentence
+ *
+ Input: He is so funny boy
+ Output: funny
+ */
+
+ ===========================================
+ /* Last Character of each word of a sentence
+
+  * Input: Kalyani Government Engineering College
+  * Output: itge
+  */
+
+  ==========================================
+
+  /* Find the occurance of each character in a string
+   * Input: Hello world
+   * Output:
+   *  H: 1
+      e: 1
+      l: 3
+      o: 2
+      w: 1
+      r: 1
+      d: 1
+  */
+
+==================================================
+
+/* Find the palindrome words from the sentence and print them and also count
+ *
+ * Input:
+ * ----------------
+ * My name is nitin and I can speak malayalam
+ *
+ * Output:
+ * ----------------
+ * nitin
+ * I
+ * malayalam
+ * 3
+ */
+
+ ===================================================
+ /* Remove duplicate characters in a string
+  *
+  * Input : Arijit Ghosh
+  * Output : Arijt Ghos
+  */
+
+=======================================================
+/* Remove Vowel From A String
+
+ * Input : Arijit Ghosh
+ * Output : rjt Ghsh
+ */
+
+ =======================================================
+
+ /*
+  * You are given a string S consisting of lowercase letters. Your task is to remove all the consecutive duplicates from
+  * the string and output the result. For example, if the input string is "abbcddeff", the output should be "abcdef".
+  *
+  * Input: abbcddeff
+  * Output: abcdef
+  */
+
+  =================================================
+  /* Remove a character from a string
+   * Input
+   * --------------
+   * Arijit
+   * i
+   * Output
+   * ---------------
+   * Arjt
+   */
+
+   ===================================================
+
+   /* Reverse of a string
+    * Arijit = tijirA
+    */
+
+    ======================================
+
+    /*Count the number of words in a sentence that start and end with the same letter.
+
+    Input: Anna asked about the Ginseng recipe
+    Output: 2
+
+    Explanation: There are two words in the sentence that start and end with the same letter - "Anna" and "Ginseng". */
+
+
+    ======================================
+
+/* Count number of spaces and characters in a string
+ * Input
+ * ---------
+ * Arijit is bad boy
+ *
+ * Output
+ * ------------------
+ * Number of space : 3
+   Number of character : 14
+*/
+
+=============================================
+/*Books are identified by International Standard Book Number(ISBN). ISBNs contain
+13 digits, arranged in five groups such as 978-0-13-110362-8. The first group
+(GSI prefix) is currently either 978 or 979. The group identifier specifies the
+language or country of origin (for example 0 and 1 are used for English speaking
+countries). The publisher code identifies the publisher (13 is the code for
+Prentice Hall, New Jersey). The item number is assigned by the publisher to
+identify a specific book (110362 is the code for the book "The C Programming
+Language" by Kernighan and Ritchie) and ISBN ends with a check digit that's used
+to verify the accuracy of preceding digits. Write a program that breaks down the
+ISBN entered by the user.:
+
+Sample Input:
+-----------------------
+Enter ISBN: 978-0-13-110362-8
+
+Sample Output:
+-----------------------
+GSI Prefix: 978
+Group Identifier: 0
+Publisher Code: 13
+Item Number: 110362
+Check Digit: 8
+
+Note: The number of digits in each group may vary. You can't assume that the
+groups have the length shown in the sample output. You can test your program
+with actual ISBN values (usually found on the back cover of a book and on the
+copyright page */
+
+==========================================
+/* Count the sum of prime digits in a given number
+ *
+ * Input: 2345678910
+ * Output: 17
+ *
+ * Explaination: 2+3+5+7 = 17
+ */
+
+ ===============================
+ /*
+ Problem Statement
+ Write a Java program to print the unique characters present in the given string in the same sequence as they appear(the first occurrence) in the input.
+
+ Note:
+ All the characters should be in lowercase only.
+
+ i/p ->
+ xperience
+
+ o/p ->
+ xperinc
+ */
+
+ ===================================================
